@@ -16,7 +16,8 @@ public class Title_Mgr : MonoBehaviour
      TitleText.text = "시작하려면 아무키나 누르세요";
      if(blinkTime >=0.5f)
      {
-     
+      titleText.color.a -=0.1f;
+      blinkTime =0.0f;
      }
      blinkTime += Time.deltaTime;
      if
